@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+/* NavbarPage */
+
+.nav-items {
+  font-weight: normal;
+  gap: 2rem;
+}
+
+.home-container {
+  background-image: url("./images/Group.png");
+  min-height: 100vh;
+  background-size: cover;
+}
+
+/* AboutPage */
+.about-container {
+  background: #0649e7;
+  background: linear-gradient(
+    360deg,
+    rgba(6, 73, 231, 1) 0%,
+    #022183 50%,
+    rgba(0, 2, 16, 1) 100%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .home-container {
+    min-height: 120vh;
+  }
+  .nav-container {
+    margin-bottom: 3rem;
+  }
+}

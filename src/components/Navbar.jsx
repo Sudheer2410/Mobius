@@ -6,14 +6,16 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between py-4 nav-container px-4 relative">
+      {/* Logo */}
       <div className="flex items-center">
         <img src={CompanyLogo} alt="MobiusEngine" className="h-8 md:h-10" />
       </div>
       
-      <div className="flex items-center space-x-12 md:space-x-16">
+      {/* Mobile Controls */}
+      <div className="flex items-center gap-4 lg:hidden">
         {/* Mobile Menu Button */}
         <button 
-          className="lg:hidden text-white z-50"
+          className="text-white z-50 p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg 
@@ -41,8 +43,8 @@ const Navbar = () => {
         </button>
 
         <button
-          className="bg-white text-[#022183] rounded-full text-sm font-semibold shadow-md hover:bg-[#022183] hover:text-[white] transition"
-          style={{ padding: "6px 15px" }}
+          className="bg-white text-[#022183] rounded-full text-sm font-semibold shadow-md hover:bg-[#022183] hover:text-[white] transition whitespace-nowrap"
+          style={{ padding: "8px 16px" }}
         >
           Get Started
         </button>

@@ -6,13 +6,19 @@ import Button from "../components/PrimaryButton";
 const HeroSection = () => {
   return (
     <div
-      className="home-container"
+      className="home-container relative w-full overflow-hidden"
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(90deg, #b3b8f3 0%, #64b6ff 40%, #0649E7 70%, #022183 100%);"
+        background: "linear-gradient(90deg, #b3b8f3 0%, #64b6ff 40%, #0649E7 70%, #022183 100%)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        WebkitBackgroundSize: "cover",
+        MozBackgroundSize: "cover",
+        OBackgroundSize: "cover"
       }}
     >
-      <div className="max-w-[1500px] w-full" style={{ padding: "1rem 2.5rem" }}>
+      <div className="max-w-[1500px] w-full mx-auto" style={{ padding: "1rem 2.5rem" }}>
         <Navbar />
         <div
           className="flex flex-col justify-center"

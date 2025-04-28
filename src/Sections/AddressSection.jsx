@@ -1,6 +1,6 @@
-import Gruop21 from "../assets/Group 21.png";
+import Gruop21 from "../assets/mobius-logo.png";
 
-function FooterPage() {
+const Address = () => {
   return (
     <div className="max-w-[1500px] w-full" style={{ padding: "3rem 2.5rem" }}>
       <div className="flex flex-col gap-4">
@@ -77,6 +77,6 @@ function FooterPage() {
       </div>
     </div>
   );
-}
+};
 
-export default FooterPage;
+export default Address;

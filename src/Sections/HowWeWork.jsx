@@ -17,7 +17,7 @@ const steps = [
   },
 ];
 
-function ServicePage() {
+const HowWeWork = () => {
   return (
     <div
       className="max-w-[1500px] w-full flex justify-center"
@@ -47,6 +47,6 @@ function ServicePage() {
       </div>
     </div>
   );
-}
+};
 
-export default ServicePage;
+export default HowWeWork;

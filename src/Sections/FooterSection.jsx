@@ -1,6 +1,6 @@
 import React from "react";
 
-function EndFooter() {
+const Footer = () => {
   return (
     <div
       className="flex flex-col md:flex-row gap-3 items-center justify-between bg-blue-600 text-white text-xs px-8 py-3 w-full"
@@ -17,6 +17,6 @@ function EndFooter() {
       </div>
     </div>
   );
-}
+};
 
-export default EndFooter;
+export default Footer;

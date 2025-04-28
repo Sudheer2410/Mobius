@@ -23,7 +23,7 @@ const team = [
   },
 ];
 
-const AboutPage = () => {
+const AboutUs = () => {
   return (
     <div
       className="max-w-[1500px] w-full flex justify-center about-container"
@@ -149,4 +149,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default AboutUs;

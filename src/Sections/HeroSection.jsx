@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
-import image1 from "../assets/image 1.png";
-import BookImg from "../assets/📖.png";
+import Book from "../assets/Book.png";
+import BookImg from "../assets/BookImage.png";
 import Button from "../components/PrimaryButton";
 
 const HeroSection = () => {
@@ -9,7 +9,7 @@ const HeroSection = () => {
       className="home-container"
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(90deg, #c3c7f7 0%, #0649E7 40%, #022183 100%)"
+        background: "linear-gradient(90deg, #b3b8f3 0%, #64b6ff 40%, #0649E7 70%, #022183 100%);"
       }}
     >
       <div className="max-w-[1500px] w-full" style={{ padding: "1rem 2.5rem" }}>
@@ -42,7 +42,7 @@ const HeroSection = () => {
             {/* Right Side */}
             <div className="relative flex justify-center items-center">
               <img
-                src={image1}
+                src={Book}
                 alt="Hiring Trends 2024/2025"
                 className="w-40 md:w-52 rounded-md"
               />

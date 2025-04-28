@@ -1,6 +1,6 @@
-import layer from "../assets/Layer 1.png";
-import profile from "../assets/Profile 1.png";
-import star from "../assets/Star 1.png";
+import layer from "../assets/ShakeHand.png";
+import ProfileIcon from "../assets/ProfileIcon.png";
+import star from "../assets/Star.png";
 
 const WhyChooseUs = () => {
   const benefits = [
@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
         "Built by folks with 40+ years in tech and hiring — we know the game, and we've got your back.",
     },
     {
-      icon: profile,
+      icon: ProfileIcon,
       title: "Real People, Real Help",
       description:
         "A hands-on team that actually cares — guiding you through every twist in your career path.",

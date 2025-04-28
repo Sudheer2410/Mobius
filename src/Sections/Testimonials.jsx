@@ -1,12 +1,12 @@
 import Button from "../components/PrimaryButton";
 
-export default function TestimonialsPage() {
+const Testimonials = () => {
   const testimonials = [
     {
       name: "Holly",
       role: "senior executive",
       story: "got over 10 job interviews and an offer she accepted",
-      videoLink: "#", // add actual video link
+      videoLink: "#", 
     },
     {
       name: "Holly",
@@ -138,4 +138,6 @@ export default function TestimonialsPage() {
       </div>
     </div>
   );
-}
+};
+
+export default Testimonials;

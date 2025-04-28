@@ -1,4 +1,4 @@
-function ContactPage() {
+const Contact = () => {
   return (
     <div
       className="max-w-[1500px] w-full flex justify-center"
@@ -29,6 +29,6 @@ function ContactPage() {
       </div>
     </div>
   );
-}
+};
 
-export default ContactPage;
+export default Contact;

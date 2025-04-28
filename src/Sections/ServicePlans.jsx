@@ -3,7 +3,7 @@ import Button from "../components/PrimaryButton";
 // import profile from "../assets/Profile 1.png";
 // import star from "../assets/Star 1.png";
 
-function ServicePlans() {
+const ServicePlans = () => {
   const plans = [
     {
       title: "April Promo",
@@ -206,7 +206,7 @@ function ServicePlans() {
           Resume Building & Coaching
         </h2>
         <p className="text-[#0649E7] text-sm">
-          Let’s talk about where you’re headed — and how your resume can get you
+          Let's talk about where you're headed — and how your resume can get you
           there.
         </p>
         <p className="text-[#0649E7] text-sm font-bold">
@@ -523,6 +523,6 @@ function ServicePlans() {
       </div>
     </div>
   );
-}
+};
 
 export default ServicePlans;

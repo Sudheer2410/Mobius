@@ -10,34 +10,43 @@ const Navbar = () => {
         <img src={CompanyLogo} alt="MobiusEngine" className="h-8 md:h-10" />
       </div>
       
-      {/* Mobile Menu Button */}
-      <button 
-        className="lg:hidden text-white z-50"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
-        <svg 
-          className="w-6 h-6" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
+      <div className="flex items-center space-x-12 md:space-x-16">
+        {/* Mobile Menu Button */}
+        <button 
+          className="lg:hidden text-white z-50"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? (
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M6 18L18 6M6 6l12 12"
-            />
-          ) : (
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          )}
-        </svg>
-      </button>
+          <svg 
+            className="w-6 h-6" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            {isMenuOpen ? (
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+
+        <button
+          className="bg-white text-[#022183] rounded-full text-sm font-semibold shadow-md hover:bg-[#022183] hover:text-[white] transition"
+          style={{ padding: "6px 15px" }}
+        >
+          Get Started
+        </button>
+      </div>
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex text-white text-base font-medium nav-items space-x-8">
@@ -68,13 +77,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      <button
-        className="bg-white text-[#022183] rounded-full text-sm font-semibold shadow-md hover:bg-[#022183] hover:text-[white] transition ml-6 md:ml-8"
-        style={{ padding: "6px 15px" }}
-      >
-        Get Started
-      </button>
     </nav>
   );
 };
